@@ -1,5 +1,8 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.Employee;
+import com.example.demo.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,14 +17,12 @@ import java.util.List;
 @RestController
 public class EmployeeController {
 
+    @Autowired
+    private EmployeeService employeeService;
+
     @GetMapping("/")
     public ResponseEntity<?> getEmployees(){
-        List<String> emp = new ArrayList<>();
-        emp.add("Saritha");
-        emp.add("Kranthi");
-        emp.add("Polaiah");
-        emp.add("Kiran");
-        emp.add("sai");
+        List<Employee> emp = employeeService.getEmployeeList();
         return new ResponseEntity<>(emp, HttpStatus.OK);
     }
 }
