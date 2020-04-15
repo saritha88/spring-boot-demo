@@ -23,7 +23,6 @@ public class EmployeeController {
     @GetMapping("/")
     public ResponseEntity<List<Employee>> getEmployees(){
         List<Employee> emp = employeeService.getEmployeeList();
-        System.out.println("Size ="+emp.size());
         return new ResponseEntity<>(emp, HttpStatus.OK);
     }
 }
