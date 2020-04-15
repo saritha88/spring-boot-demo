@@ -1,2 +1,2 @@
 # spring-boot-demo
-DEMO
+DEMO -BOOT
