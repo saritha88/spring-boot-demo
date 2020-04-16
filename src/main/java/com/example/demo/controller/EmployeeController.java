@@ -23,7 +23,7 @@ public class EmployeeController {
     @GetMapping("/")
     public ResponseEntity<List<Employee>> getEmployees(){
         List<Employee> emp = employeeService.getEmployeeList();
-        System.out.println("Testing");
+        System.out.println("dummy");
         return new ResponseEntity<>(emp, HttpStatus.OK);
     }
 }
