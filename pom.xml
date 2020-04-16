@@ -54,9 +54,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+		<!--	<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId> <!-- surefire plugin version managed by Spring Boot -->
+				<artifactId>maven-surefire-plugin</artifactId> &lt;!&ndash; surefire plugin version managed by Spring Boot &ndash;&gt;
 				<configuration>
 					<skipTests>true</skipTests>
 				</configuration>
@@ -107,7 +107,7 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
-					<!-- Threshold -->
+					&lt;!&ndash; Threshold &ndash;&gt;
 					<execution>
 						<id>coverage-check</id>
 						<goals>
@@ -132,7 +132,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
