@@ -19,8 +19,6 @@ public class EmployeeService {
         list.add(new Employee(3,"Polaiah"));
         list.add(new Employee(4,"Kiran"));
         list.add(new Employee(5,"sai"));
-        list.add(new Employee(6,"Kumar"));
-
-        return list;
+              return list;
     }
 }
