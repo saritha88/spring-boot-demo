@@ -128,13 +128,13 @@
 										<exclude>com.example.demo.controller.EmployeeController</exclude>
 										<exclude>com.example.demo.model.Employee</exclude>
 									</excludes>
-									<!--<limits>
+									<limits>
 										<limit>
 											<counter>LINE</counter>
 											<value>COVEREDRATIO</value>
 											<minimum>80%</minimum>
 										</limit>
-									</limits>-->
+									</limits>
 								</rule>
 							</rules>
 						</configuration>
