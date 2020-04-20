@@ -22,17 +22,17 @@ class DemoApplicationTests {
 
 	@Autowired
 	private EmployeeController employeeController;
-/*
+
 	@Test
 	public void testEmpList(){
 		assertNotNull(employeeService.getEmployeeList());
-	}*/
+	}
 
-/*
+
 	@Test
 	public void testEmpList1(){
 		assertNotNull(employeeController.getEmployees());
-	}*/
+	}
 
 
 }
