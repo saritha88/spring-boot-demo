@@ -23,7 +23,7 @@ class DemoApplicationTests {
 	@Autowired
 	private EmployeeController employeeController;
 
-	@Test
+	/*@Test
 	public void testEmpList(){
 		assertNotNull(employeeService.getEmployeeList());
 	}
@@ -32,7 +32,7 @@ class DemoApplicationTests {
 	@Test
 	public void testEmpList1(){
 		assertNotNull(employeeController.getEmployees());
-	}
+	}*/
 
 
 }
