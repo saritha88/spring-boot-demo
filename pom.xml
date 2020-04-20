@@ -74,7 +74,7 @@
 							</includes>
 						</configuration>
 					</execution>
-					<!--<execution>
+					<execution>
 						<id>integration-tests</id>
 						<phase>integration-test</phase>
 						<goals>
@@ -87,7 +87,7 @@
 								<include>**/*Tests.*</include>
 							</includes>
 						</configuration>
-					</execution>-->
+					</execution>
 				</executions>
 			</plugin>
 			<plugin>
@@ -124,7 +124,7 @@
 										<limit>
 											<counter>LINE</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>60%</minimum>
+											<minimum>80%</minimum>
 										</limit>
 									</limits>
 								</rule>
