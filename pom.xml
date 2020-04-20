@@ -119,6 +119,8 @@
 									<element>CLASS</element>
 									<excludes>
 										<exclude>com.example.demo.DemoApplication</exclude>
+										<exclude>com.example.demo.controller.EmployeeController</exclude>
+										<exclude>com.example.demo.model.Employee</exclude>
 									</excludes>
 									<limits>
 										<limit>
