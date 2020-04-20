@@ -125,7 +125,7 @@
 									<element>CLASS</element>
 									<excludes>
 										<exclude>com.example.demo.DemoApplication</exclude>
-										<exclude>controllerom.example.demo.controller.EmployeeController</exclude>
+										<exclude>com.example.demo.controller.EmployeeController</exclude>
 										<exclude>com.example.demo.model.Employee</exclude>
 									</excludes>
 									<limits>
