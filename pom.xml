@@ -125,14 +125,15 @@
 									<element>CLASS</element>
 									<excludes>
 										<exclude>com.example.demo.DemoApplication</exclude>
-										<exclude>com.example.demo.controller.EmployeeController</exclude>
+										<exclude>controllerom.example.demo.controller.EmployeeController</exclude>
 										<exclude>com.example.demo.model.Employee</exclude>
 									</excludes>
 									<limits>
 										<limit>
 											<counter>LINE</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>80%</minimum>
+											<!--suppress UnresolvedMavenProperty -->
+											<minimum>${jacoco.percentage.instruction}</minimum>
 										</limit>
 									</limits>
 								</rule>
