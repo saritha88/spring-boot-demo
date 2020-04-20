@@ -28,10 +28,12 @@ class DemoApplicationTests {
 		assertNotNull(employeeService.getEmployeeList());
 	}
 
+/*
 	@Test
 	public void testEmpList1(){
 		assertNotNull(employeeController.getEmployees());
 	}
+*/
 
 
 }

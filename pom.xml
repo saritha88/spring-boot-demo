@@ -72,6 +72,12 @@
 							<includes>
 								<include>**/*Test.java</include>
 							</includes>
+							<properties>
+								<sonar.exclusions>
+									**/DemoApplication.java,
+									**/demo/model/*.java
+								</sonar.exclusions>
+							</properties>
 						</configuration>
 					</execution>
 					<execution>
