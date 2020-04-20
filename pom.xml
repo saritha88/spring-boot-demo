@@ -54,9 +54,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		<!--	<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId> &lt;!&ndash; surefire plugin version managed by Spring Boot &ndash;&gt;
+				<artifactId>maven-surefire-plugin</artifactId> <!-- surefire plugin version managed by Spring Boot -->
 				<configuration>
 					<skipTests>true</skipTests>
 				</configuration>
@@ -74,7 +74,7 @@
 							</includes>
 						</configuration>
 					</execution>
-					<execution>
+					<!--<execution>
 						<id>integration-tests</id>
 						<phase>integration-test</phase>
 						<goals>
@@ -87,7 +87,7 @@
 								<include>**/*Tests.*</include>
 							</includes>
 						</configuration>
-					</execution>
+					</execution>-->
 				</executions>
 			</plugin>
 			<plugin>
@@ -107,7 +107,7 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
-					&lt;!&ndash; Threshold &ndash;&gt;
+					<!-- Threshold -->
 					<execution>
 						<id>coverage-check</id>
 						<goals>
@@ -118,13 +118,13 @@
 								<rule>
 									<element>CLASS</element>
 									<excludes>
-										<exclude>com.asimio.demo.Application</exclude>
+										<exclude>com.example.demo.DemoApplication</exclude>
 									</excludes>
 									<limits>
 										<limit>
 											<counter>LINE</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>80%</minimum>
+											<minimum>60%</minimum>
 										</limit>
 									</limits>
 								</rule>
@@ -132,7 +132,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>-->
+			</plugin>
 		</plugins>
 	</build>
 
