@@ -18,7 +18,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @GetMapping("/")
+    @GetMapping("/employees")
     public ResponseEntity<List<Employee>> getEmployees(){
         List<Employee> emp = employeeService.getEmployeeList();
         return new ResponseEntity<>(emp, HttpStatus.OK);
